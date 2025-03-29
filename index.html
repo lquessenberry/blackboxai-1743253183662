@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayenta Demo Clone</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌵</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation will go here -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">Kayenta</div>
+                <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <nav class="hidden md:block" id="main-nav">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Features</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content sections will go here -->
+    <main>
+        <!-- Hero section -->
+        <section class="relative h-[500px] bg-gray-900 overflow-hidden">
+            <!-- Background image placeholder - would use actual image from original site -->
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509316785289-025f5b8b1c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-70"></div>
+            
+            <div class="relative z-10 h-full flex items-center">
+                <div class="container mx-auto px-4 text-center text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">Lee Quessenberry</h1>
+                    <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8">Senior Full-stack Developer & Digital Strategist</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Get Started</a>
+                        <a href="#" class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-md font-medium transition duration-300">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Core Expertise</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">20+ years of digital experience across multiple industries</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Full-Stack Development</h3>
+                        <p class="text-gray-600">Drupal, HTML5, CSS3, JavaScript and modern frameworks for robust web solutions.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Digital Strategy</h3>
+                        <p class="text-gray-600">SEO, PPC, and inbound marketing strategies that drive measurable results.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Team Leadership</h3>
+                        <p class="text-gray-600">Mentoring developers and coordinating cross-functional teams for project success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Endorsements</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">What colleagues say about working with Lee</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold text-lg">Michael Thompson</h4>
+                                <p class="text-gray-600">Former Colleague at E.C. Barton</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"Lee led our team to build E.C. Barton's first e-commerce site that generated $1.2M in sales within 6 months. His technical expertise and leadership were invaluable."</p>
+                        <div class="flex justify-center space-x-2">
+                            <button class="w-3 h-3 rounded-full bg-gray-300"></button>
+                            <button class="w-3 h-3 rounded-full bg-blue-600"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Personal Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Lee Quessenberry</h3>
+                    <p class="text-gray-400">Senior Full-stack Developer & Digital Strategist based in Jonesboro, AR</p>
+                </div>
+
+                <!-- Professional Links -->
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Professional Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.linkedin.com/in/lquessenberry" class="text-gray-400 hover:text-white transition">LinkedIn Profile</a></li>
+                        <li><a href="https://leequessenberry.com" class="text-gray-400 hover:text-white transition">Personal Website</a></li>
+                        <li><a href="https://cybernautprotocol.com" class="text-gray-400 hover:text-white transition">Tech Blog</a></li>
+                        <li><a href="https://jimquessenberry.com" class="text-gray-400 hover:text-white transition">Business Website</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> lquessenberry@hotmail.com</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> 501-281-2231</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Jonesboro, AR</li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Kayenta. All rights reserved. | <a href="#" class="hover:text-white transition">Privacy Policy</a> | <a href="#" class="hover:text-white transition">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
